@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styles */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: white;
+            text-align: center;
+            padding: 20px;
+            flex: 0 1 100%;
+        }
+
+        /* Sidebar Styles */
+        .sidebar {
+            width: 200px;
+            background-color: #45a049;
+            color: white;
+            padding: 20px;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        .sidebar h2 {
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        .sidebar ul li {
+            margin: 10px 0;
+        }
+
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+            display: block;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .sidebar ul li a:hover {
+            background-color: #575757;
+        }
+
+        /* Main Content Styles */
+        .main-content {
+            margin-left: 250px;
+            padding: 20px;
+            width: 100%;
+            height: 100%;
+            overflow-y: auto;
+        }
+
+        /* Info Cards */
+        .info-cards {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background-color: #f4f4f4;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            flex: 1;
+            text-align: center;
+        }
+
+        .card h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                position: relative;
+            } 
+
+            .main-content {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Dashboard</h2>
+        <ul>
+            <li><a href="http://localhost/UKK2025/Registrasi.php">Registrasi</a></li>
+            <li><a href="http://localhost/UKK2025/Pendataan%20barang.php">Pendataan Barang</a></li>
+            <li><a href="http://localhost/UKK2025/peminjam.php">Peminjaman</a></li>
+            <li><a href="http://localhost/UKK2025/GENERATELAPORAN.php">Generate Laporan</a></li>
+            <li><a href="http://localhost/UKK2025/LOGOUT.php">Logout</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="info-cards">
+           <center> <div class="card">
+                <h1>SELAMAT DATANG DIPERPUSTAKAAN DIGITAL</h1>
+                <p>Perpustakaan digital adalah platform online yang menyediakan akses ke berbagai 
+                    sumber daya informasi dalam bentuk digital, seperti buku, jurnal, dan artikel.
+                     Pengguna dapat mengakses, membaca, atau menyimpan bahan 
+                    kapan saja dan di mana saja melalui internet, mempermudah pencarian dan pengelolaan informasi secara efisien.
+                    </p>
+            </div></center>
+        </div>
+    </div>
+</body>
+</html>
